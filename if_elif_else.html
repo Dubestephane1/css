@@ -1,224 +1,302 @@
-If, elif, and else statements are essential control flow constructs in Python, allowing programmers to make decisions based on specific conditions. These statements enable the code to follow different execution paths based on whether certain conditions are true or false. In this article, we will explore the use of if, elif, and else statements in Python, along with examples.
-
-The if Statement
-The if statement is used to test a specific condition and execute a set of statements only if the condition is true. The basic syntax of an if statement is as follows:
-
-if condition:
-    statement1
-    statement2
-    ...
-If the condition is true, the statements inside the if block are executed. If the condition is false, the statements inside the if block are skipped, and the program moves on to the next statement.
-
-Example:
-x = 10
-if x > 5:
-    print("x is greater than 5")
-In this example, the condition x > 5 is true, so the print statement inside the if block is executed.
-
-The elif Statement
-The elif statement is used to test additional conditions after the if statement. It allows the program to check for multiple conditions and execute the corresponding block of code. The basic syntax of an elif statement is as follows:
-
-if condition1:
-    statement1
-elif condition2:
-    statement2
-elif condition3:
-    statement3
-...
-else:
-    statement4
-If the condition1 is true, statement1 is executed, and the remaining elif and else statements are skipped. If condition1 is false, the condition2 is evaluated, and if it is true, statement2 is executed. This process continues until a true condition is found, and the corresponding block of code is executed. If none of the conditions are true, the else block is executed.
-
-Example:
-x = 5
-if x > 10:
-    print("x is greater than 10")
-elif x > 5:
-    print("x is greater than 5 but less than or equal to 10")
-else:
-    print("x is less than or equal to 5")
-In this example, the condition x > 10 is false, so the program moves on to the next condition. The condition x > 5 is also false, so the else block is executed.
-
-The else Statement
-The else statement is used to specify a block of code to execute if none of the conditions in the if or elif statements are true. The basic syntax of an else statement is as follows:
-
-if condition:
-    statement1
-    statement2
-    ...
-else:
-    statement3
-    statement4
-    ...
-If the condition is true, the statements inside the if block are executed. If the condition is false, the statements inside the else block are executed.
-
-Example:
-x = 10
-if x > 20:
-    print("x is greater than 20")
-else:
-    print("x is less than or equal to 20")
-In this example, the condition x > 20 is false, so the statement inside the else block is executed.
-
-Conclusion
-The if, elif, and else statements are fundamental constructs in Python, enabling programmers to make decisions based on specific conditions. These statements allow the code to follow different execution paths based on whether certain conditions are true or false. By using these statements, we can make our programs more flexible and capable of handling complex logic.
-
-####################################################
-
-Python is a powerful and versatile programming language that is widely used in a variety of fields, including web development, data analysis, and scientific computing. One of the key features of Python is its ability to make decisions based on conditions using the if...elif...else statement.
-
-
-The if statement in Python is used to test a condition, and execute a block of code only if the condition is true. Here is an example:
-
-
-bash
-Copy code
-x = 5
-if x > 0:
-    print("x is positive")
-
-In this example, the condition x > 0 is true, so the code inside the if block is executed, which prints "x is positive" to the console.
-
-
-The elif statement is used to test additional conditions after the initial if statement. If the initial if statement is false, the code inside the elif block is executed if the condition is true. Here is an example:
-
-
-bash
-Copy code
-x = -2
-if x > 0:
-    print("x is positive")
-elif x < 0:
-    print("x is negative")
-
-In this example, the initial if statement is false, so the code inside the elif block is executed, which prints "x is negative" to the console.
-
-
-Finally, the else statement is used to execute code if all previous conditions are false. Here is an example:
-
-
-bash
-Copy code
-x = 0
-if x > 0:
-    print("x is positive")
-elif x < 0:
-    print("x is negative")
-else:
-    print("x is zero")
-
-In this example, both the initial if statement and the elif statement are false, so the code inside the else block is executed, which prints "x is zero" to the console.
-
-
-It's important to note that the elif and else statements are optional, and you can have multiple elif statements to test additional conditions.
-
-
-Here is an example with multiple elif statements:
-
-
-bash
-Copy code
-x = 5
-if x < 0:
-    print("x is negative")
-elif x == 0:
-    print("x is zero")
-elif x % 2 == 0:
-    print("x is even")
-else:
-    print("x is odd")
-
-In this example, the initial if statement is false, so the first elif statement is tested. Since x == 0 is false, the next elif statement is tested, which is true because x % 2 == 0. Therefore, the code inside the second elif block is executed, which prints "x is even" to the console.
-
-
-The if...elif...else statement is a powerful tool in Python that allows you to make decisions based on conditions. By using these statements, you can write code that is flexible and can adapt to different situations. Whether you're building a web application, analyzing data, or working on a scientific computing project, the if...elif...else statement is an essential feature of Python that you should master.
-
-################################
-
-In this article, we will learn about the Python if...elif...else statement, which is used to create decision-making programs based on different conditions. We will also see some code examples to illustrate how this statement works.
-
-The Python if...elif...else statement is a way of writing multiple if statements in a concise and readable way. The syntax of this statement is:
-
-if condition1:
-    # block of code to execute if condition1 is True
-elif condition2:
-    # block of code to execute if condition1 is False and condition2 is True
-elif condition3:
-    # block of code to execute if condition1 and condition2 are False and condition3 is True
-...
-else:
-    # block of code to execute if all conditions are False
-
-The if...elif...else statement evaluates each condition from top to bottom until it finds one that is True, and then executes the corresponding block of code. If none of the conditions are True, it executes the else block (if present).
-
-Let's see some examples of using the Python if...elif...else statement.
-
-Example 1: Write a program that asks the user to enter a number and prints whether it is positive, negative or zero.
-
-# ask the user to enter a number
-number = int(input("Enter a number: "))
-
-# check if the number is positive, negative or zero
-if number > 0:
-    print("The number is positive.")
-elif number < 0:
-    print("The number is negative.")
-else:
-    print("The number is zero.")
-
-Output:
-
-Enter a number: 5
-The number is positive.
-
-Enter a number: -3
-The number is negative.
-
-Enter a number: 0
-The number is zero.
-
-Example 2: Write a program that asks the user to enter their grade and prints their performance based on the following criteria:
-
-- A grade above 90 is excellent
-- A grade between 80 and 90 is good
-- A grade between 70 and 80 is average
-- A grade below 70 is poor
-
-# ask the user to enter their grade
-grade = int(input("Enter your grade: "))
-
-# check the performance based on the grade
-if grade > 90:
-    print("Your performance is excellent.")
-elif grade >= 80 and grade <= 90:
-    print("Your performance is good.")
-elif grade >= 70 and grade < 80:
-    print("Your performance is average.")
-else:
-    print("Your performance is poor.")
-
-Output:
-
-Enter your grade: 95
-Your performance is excellent.
-
-Enter your grade: 85
-Your performance is good.
-
-Enter your grade: 75
-Your performance is average.
-
-Enter your grade: 65
-Your performance is poor.
-
-In summary, the Python if...elif...else statement allows us to write conditional code that can handle multiple scenarios based on different conditions. It is a useful tool for creating decision-making programs in Python.
-
-
-######################
-
-
-
-
-
-
-
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Odin - Index</title>
+  <meta content="" name="Odin in a website for peoples who wish to learn he basics about AI and programming.">
+  <meta content="keywords" name="Python, AI, CSS, HTML, PHP, programming">
+
+  <!-- Favicons -->
+  <link href="assets/img/odinicon.ico" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-inner-pages">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="logo me-auto me-lg-0"><a href="index.html">Odin<span>.</span></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto " href="index.html#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
+          <li><a class="nav-link scrollto" href="index.html#services">Services</a></li>
+          <li><a class="nav-link scrollto " href="index.html#learning">Learning</a></li>
+          <li><a class="nav-link scrollto" href="index.html#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <a href="index.html#about" class="get-started-btn scrollto">Get Started</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Article</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>If...elif...else</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    
+      <!-- ======= Features Section <section class="inner-page"> ======= -->
+    <section id="features" class="features">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="image col-lg-3" data-aos="fade-right">
+            <img src="assets/img/python.png" class="img-fluid" alt="">
+          </div>
+            <div class="col-lg-9" data-aos="fade-left" data-aos-delay="100">
+              <div class="section-title">
+                <h2>python</h2>
+                <p>if ... elif ... else</p>
+              </div>
+            <div>
+              <p>
+                In this article, we will learn about the Python if ... elif ... else statement, which is used 
+                to create decision-making programs based on different conditions. We will also see some code 
+                examples to illustrate how this statement works.
+              </p>
+              <p>
+                The Python if ... elif ... else statement is a way of writing multiple if statements in a concise and 
+                readable way. The syntax of this statement is:
+              </p>
+              <div class="text-bg-warning p-3">
+                <h5>Example:</h5>
+                <pre>
+
+  if condition1:
+      # block of code to execute if condition1 is True
+  elif condition2:
+      # block of code to execute if condition1 is False and condition2 is True
+  elif condition3:
+      # block of code to execute if condition1 and condition2 are False and condition3 is True
+  ...
+  else:
+      # block of code to execute if all conditions are False</pre>
+              </div>
+              <p>
+                <br>
+                The if ... elif ... else statement evaluates each condition from top to bottom until it finds one that is True, and then executes the corresponding block of code. If none of the conditions are True, it executes the else block (if present).
+              </p>
+              <p>
+                Let's see some examples of using the Python if ... elif ... else statement.
+              </p>
+              <p>
+                We will write a program that asks the user to enter a number and prints if it is positive, negative or zero.
+              </p>
+              <div class="text-bg-warning p-3">
+                <h5>Example 1: </h5>
+<pre>
+
+  # ask the user to enter a number
+  number = int(input("Enter a number: "))
+
+  # check if the number is positive, negative or zero
+  if number > 0:
+      print("The number is positive.")
+  elif number < 0:
+      print("The number is negative.")
+  else:
+      print("The number is zero.")</pre>
+                
+              </div>
+              <br>
+              <div class="text-bg-light p-3">
+                <pre>
+                  <h5>Output:</h5>
+  Enter a number: 5
+    The number is positive.
+
+  Enter a number: -3
+    The number is negative.
+
+  Enter a number: 0
+    The number is zero.
+                </pre>
+            </div>
+            <p>
+            <br>
+                Let's try one more example.
+            </p>
+            <p>
+                We will write a program that asks the user to enter their grade and prints their performance based on the following criteria:
+            <ul>
+                <li>A grade above 90 is excellent</li>
+                <li>A grade between 80 and 90 is good</li>
+                <li>A grade between 70 and 80 is average</li>
+                <li>A grade below 70 is poor</li>
+            </ul>
+            </p>
+            <div class="text-bg-warning p-3">
+                <h5>Example 2: </h5>
+            <pre>
+  
+  # ask the user to enter their grade
+  grade = int(input("Enter your grade: "))
+  
+  # check the performance based on the grade
+  if grade > 90:
+      print("Your performance is excellent.")
+  elif grade >= 80 and grade <= 90:
+      print("Your performance is good.")
+  elif grade >= 70 and grade < 80:
+      print("Your performance is average.")
+  else:
+      print("Your performance is poor.")</pre>
+                
+              </div>
+              <br>
+              <div class="text-bg-light p-3">
+                <pre>
+                  <h5>Output:</h5>
+  Enter your grade: 95
+    Your performance is excellent.
+                  
+  Enter your grade: 85
+    Your performance is good.
+                  
+  Enter your grade: 75
+    Your performance is average.
+                  
+  Enter your grade: 65
+    Your performance is poor.</pre>
+              </div>
+            </div> 
+            <p>
+              <br>
+              The if ... elif ... else statement is a powerful tool in Python that allows you to make decisions 
+              based on conditions. By using these statements, you can write code that is flexible and can 
+              adapt to different situations. It is a useful tool for creating decision-making programs in Python. 
+              Whether you're building a web application, analyzing data, or working on a scientific computing 
+              project, the if ... elif ... else statement is an essential feature of Python that you should master.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>Odin<span>.</span></h3>
+              <p>
+                A108 Adam Street <br>
+                NY 535022, USA<br><br>
+                <strong>Phone:</strong> +1 5589 55488 55<br>
+                <strong>Email:</strong> info@example.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Odin</span></strong>. All Rights Reserved 2023
+      </div>
+      <div class="credits">
+        Designed by <a href="https://github.com/Dubestephane1">Stephane Dube</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
