@@ -84,25 +84,37 @@
                             In this article, we will explain what lambda functions are, how to write them, and when to use them. We will also show some examples of lambda functions in action.
                         </p>
                         <p>
-                            What are lambda functions?
+                            <b>What are lambda functions?</b>
                         </p>
                         <p>
                             A lambda function is a function that has no name and is defined using the lambda keyword. A lambda function can take any number of arguments, but can only have one expression. The expression is evaluated and the result is returned.
                         </p>
                         <p>
-                            For example, the following lambda function takes one argument x and returns x + 10:
-                        </p>
-                        <p>
-                            lambda x: x + 10
+                            For example, the following lambda function takes one argument x and returns x + 10.
                         </p>
                         <p>
                             You can assign a lambda function to a variable and use it like a regular function:
                         </p>
-                        <p>add_ten = lambda x: x + 10
-                            print(add_ten(5)) # 15</p>
+
+                        <div class="text-bg-warning p-3">
+                            <h5>Example:</h5>
+                            <br>
+                            <pre>
+    add_ten = lambda x: x + 10
+    print(add_ten(5))
+                            </pre>
+                        </div>
+                        <p></p>
+                        <div class="text-bg-light p-3">
+                            <h5>Output:</h5>
+                            <br>
+                            <pre>
+    15
+                            </pre>
+                        </div>
+                        <br>
                         <p>
                             However, the main advantage of lambda functions is that they can be used as arguments to other functions that expect a function object, such as map(), filter(), reduce(), or sorted(). This way, you can write concise and elegant code without defining a separate function.
-
                         </p>
                         <p>
                             Examples of lambda functions
@@ -112,59 +124,90 @@
                             Let's see some examples of how to use lambda functions in Python.
                         </p>
                         <p>
-                            Example 1: Using lambda with map()
+                            
                         </p>
                         <p>
                             The map() function takes a function and an iterable as arguments and applies the function to each element of the iterable, returning a new iterable.
-
                         </p>
                         <p>
                             For example, suppose we have a list of numbers and we want to square each number. We can use a lambda function to define the squaring operation and pass it to map():
-
                         </p>
-                        <p>numbers = [1, 2, 3, 4, 5]
-                            squared = map(lambda x: x ** 2, numbers)
-                            print(list(squared)) # [1, 4, 9, 16, 25]
-                            </p>
+                        <div class="text-bg-warning p-3">
+                            <h5>Example 1: Using lambda with map()</h5>
+                            <br>
+                            <pre>
+    numbers = [1, 2, 3, 4, 5]
+    squared = map(lambda x: x ** 2, numbers)
+    print(list(squared))
+                            </pre>
+                        </div>
+                        <p></p>
+                        <div class="text-bg-light p-3">
+                            <h5>Output:</h5>
+                            <br>
+                            <pre>
+    [1, 4, 9, 16, 25]
+                            </pre>
+                        </div>
                         <p>
+                            <br>
                             Note that map() returns a map object, which is an iterator. To get the actual list of results, we need to convert it to a list using list().
-
                         </p>
-                        <p>Example 2: Using lambda with filter()</p>
                         <p>
                             The filter() function takes a function and an iterable as arguments and returns a new iterable with only those elements that satisfy the function.
-
                         </p>
                         <p>For example, suppose we have a list of names and we want to filter out those that start with 'A'. We can use a lambda function to define the filtering condition and pass it to filter():
                         </p>
-                        <p>names = ['Alice', 'Bob', 'Charlie', 'David', 'Eve']
-                            filtered = filter(lambda x: x.startswith('A'), names)
-                            print(list(filtered)) # ['Alice']</p>
+                        <div class="text-bg-warning p-3">
+                            <h5>Example 2: Using lambda with filter()</h5>
+                            <br>
+                            <pre>
+    names = ['Alice', 'Bob', 'Charlie', 'David', 'Eve']
+    filtered = filter(lambda x: x.startswith('A'), names)
+    print(list(filtered))
+                            </pre>
+                        </div>
+                        <p></p>
+                        <div class="text-bg-light p-3">
+                            <h5>Output:</h5>
+                            <br>
+                            <pre>
+    ['Alice']
+                            </pre>
+                        </div>
+                        <p></p>
                         <p>
                             Note that filter() returns a filter object, which is an iterator. To get the actual list of results, we need to convert it to a list using list().
-
-                        </p>
-                        <p>
-                            Example 3: Using lambda with sorted()
                         </p>
                         <p>
                             The sorted() function takes an iterable as an argument and returns a new sorted list. You can also provide a key function that determines how the elements are compared.
-
                         </p>
                         <p>
                             For example, suppose we have a list of tuples representing students and their grades. We want to sort the list by grades in descending order. We can use a lambda function to define the key function that extracts the grade from each tuple and pass it to sorted():
-
                         </p>
-                        <p>students = [('Alice', 90), ('Bob', 80), ('Charlie', 85), ('David', 75), ('Eve', 95)]
-                            sorted_by_grade = sorted(students, key=lambda x: x[1], reverse=True)
-                            print(sorted_by_grade) # [('Eve', 95), ('Alice', 90), ('Charlie', 85), ('Bob', 80), ('David', 75)]
-                            </p>
+                        <div class="text-bg-warning p-3">
+                            <h5>Example 3: Using lambda with sorted()</h5>
+                            <br>
+                            <pre>
+    students = [('Alice', 90), ('Bob', 80), ('Charlie', 85), ('David', 75), ('Eve', 95)]
+    sorted_by_grade = sorted(students, key=lambda x: x[1], reverse=True)
+    print(sorted_by_grade)
+                            </pre>
+                        </div>
+                        <p></p>
+                        <div class="text-bg-light p-3">
+                            <h5>Output:</h5>
+                            <br>
+                            <pre>
+    [('Eve', 95), ('Alice', 90), ('Charlie', 85), ('Bob', 80), ('David', 75)]
+                            </pre>
+                        </div>
+                        <p></p>
                         <p>
-                            Conclusion
+                            <b>Conclusion</b>
                         </p>
                         <p>
                             In this article, we learned about the Python lambda keyword and how to use it to create small anonymous functions. We also saw some examples of using lambda functions with built-in functions that take a function object as an argument.
-
                         </p>
                         <p>
                             Lambda functions are useful when you need a quick and simple function that you only use once or twice. However, they are not meant to replace regular functions for more complex or reusable tasks. In general, you should use lambda functions sparingly and avoid making them too long or complicated.
