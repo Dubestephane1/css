@@ -53,7 +53,7 @@
       <div class="container position-relative d-flex align-items-center justify-content-between">
         <a href="https://odin.fr.to" class="logo d-flex align-items-center">
           <!-- Uncomment the line below if you also wish to use an image logo -->
-          <img src="../assets/img/icon_logo.jpg" alt="Odin logo">
+          <img src="../assets/img/secondlogo.jpg" alt="Odin logo">
           <h1 class="sitename">Odin<br></h1>
         </a>
         <nav id="navmenu" class="navmenu">
@@ -85,47 +85,57 @@
               <article class="article">
 
                 <div class="post-img">
-                  <img src="img/impact-of-ai.jpg" alt="Blog image" class="img-fluid">
+                  <img src="img/if_else.jpg" alt="Blog image" class="img-fluid">
                 </div>
 
-                <h2 class="title">Title</h2>
+                <h2 class="title">Python If ... Else statement</h2>
 
                 <div class="meta-top">
                   <ul>
                     <li class="d-flex align-items-center"><i class="bi bi-person"></i> 
                     <a href="#">Odin</a></li>
                     <li class="d-flex align-items-center"><i class="bi bi-clock"></i> 
-                    <time datetime="2024-07-24">2024 July 24</time></a></li>
+                    <time datetime="2024-07-25">2024 July 25</time></a></li>
                   </ul>
                 </div><!-- End meta top -->
 
                 <div class="content">
                     <div class="alert alert-success" role="alert">
-                        <strong></strong>
+                        <strong>The `if` and `else` are control flow statements</strong>
                     </div>
-                    <p></p>
-                    <p></p>
+                    <p>It allow Python to make decisions based on conditions.</p>
+                    <p>In this following example, the expression `z > 5` checks if the value stored in variable `z` is greater than 5.</p>
+                    <p>If it's true, Python executes the code inside the indented block under 'if'.</p>
+                    <p>Otherwise, it runs the code under 'else'.</p>
+                    <div class="alert alert-light" role="alert">                    
+                    <strong><pre><code>
+z = 10
+if z > 5:
+  print('z is greater than 5.')
+else:
+  print('z is not greater than 5.')
+                        </code></pre></strong></div>
+                    <div class="alert alert-secondary" role="alert">
+                        <strong>Let's break down this piece of code:</strong>
+                    </div>
+                    <p><strong>z = 10</strong> # Here we're declaring a variable 'z' and assigning it the value 10.</p>
+                    <p><strong>if z > 5:</strong> # We're setting up an if-else statement.</p>
+                    <p># The 'if' part checks whether the condition (in this case, 'z is greater than 5') is true.</p>
+                    <p><strong>print('z is greater than 5.')</strong> # If the condition in parentheses is true, Python executes this line of code.</p>
+                    <p><strong>else:</strong> # If the condition in the if statement was false, Python will execute what's under else instead.</p>
+                    <p><strong>print('z is not greater than 5.')</strong> # This line gets executed only if the 'if' condition was false (i.e., z wasn't greater than 5).</p>
+                    <p>The text inside the parentheses ('z is greater than 5.') is what gets printed:</p>
                     <div class="alert alert-warning" role="alert">
-                        <strong></strong>
+                        <strong>z is greater than 5.</strong>
                     </div>
-                    <p></p>
-                    <p></p>
-                    <div class="alert alert-warning" role="alert">
-                        <strong></strong>
-                    </div>
-                    <p></p>
-                    <p></p>
-                    <div class="alert alert-warning" role="alert">
-                        <strong></strong>
-                    </div>
-                    <p></p>
-                    <p></p>
+                    <p>This is a simple way for Python to make decisions based on conditions.</p>
                     <div class="alert alert-primary" role="alert">
                         <strong>In conclusion</strong>
                     </div>
-                    <p></p>
-                    <p></p>
-                    <p></p>
+                    <p>This code first declares a variable `z` and assigns it the value of 10.</p>
+                    <p>Then, it uses an `if-else` statement to check whether `z` is greater than 5.</p>
+                    <p>If that's true, it prints 'z is greater than 5.'; if not, it prints 'z is not greater than 5.'.</p>
+                    
                 </div><!-- End post content -->
                 <!--
                   <div class="alert alert-primary" role="alert">
@@ -161,7 +171,7 @@
           <section id="blog-author" class="blog-author section">
             <div class="container">
               <div class="author-container d-flex align-items-center">
-                <img src="assets/img/secondlogo.jpg" class="rounded-circle flex-shrink-0" alt="">
+                <img src="../assets/img/secondlogo.jpg" class="rounded-circle flex-shrink-0" alt="">
                 <div>
                   <h4>Author: Odin</h4>
                   <div class="social-links">
