@@ -1,111 +1,556 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - Odin</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="CSS, OdinCSS, odin, AI, Python, Bootstrap, Tailwind, TailwindCSS, Odin">
+	<meta name="description" content="This is OdinCSS website, easy and usefull ressources to write CSS">
+    <meta name="author" content="OdinCSS">
+    <title>OdinCSS - Modern CSS Framework</title>
+    <link href="odinstyle1.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/ico" sizes="16x16" href="odinicon.ico">
 
-  <!-- Favicons -->
-  <link href="assets/img/odinicon.ico" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="index7.css" rel="stylesheet">
+</head>
+<body class="black-bg white-txt font-poppins line-h-16">
+    <!-- Navigation -->
+    <nav class="position-sticky top-0 black-bg trans-95 zindex pad-tb-10 pad-lr-20 border-b charcoal-border">
+        <div class="max-w-1200 margin-tb-0 margin-lr-auto display-flex justify-content-between items-center">
+            <div class="display-flex items-center gap-1">
+                <div class="w-40 h-40 display-flex items-center justify-content-center pad-t-5">
+                    <a href="#"><img src="odinicon.ico" class="h-45" alt="OdinCSS Logo"></a>
+                </div>
+                <h1><a href="#" class="font-oxanium font-size-20 azure-txt pad-l-5 pad-t-4 txt-deco-none">OdinCSS</a></h1>
+            </div>
+            <div class="nav-links display-flex gap-20">
+                <a href="#home" class="white-txt txt-deco-none weight-500 transition-3 azure-txt-hover">Home</a>
+                <a href="#classes" class="white-txt txt-deco-none weight-500 transition-3 azure-txt-hover">Classes</a>          
+                <a href="#demo" class="white-txt txt-deco-none weight-500 transition-3 azure-txt-hover">Demo</a>
+                <a href="#about" class="white-txt txt-deco-none weight-500 transition-3 azure-txt-hover">About</a>
+                <a href="#resources" class="white-txt txt-deco-none weight-500 transition-3 azure-txt-hover">Resources</a>
+            </div>
+            <div class="menu-toggle">
+                <i class="bi bi-list font-size-24 white azure-txt-hover"></i>
+            </div>
+        </div>
+    </nav>
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Hero Section -->
+    <section class="min-h-80 display-flex items-center justify-content-center pad-l-20 pad-r-20 pad-b-50 pad-t-50" id="home">
+        <div class="txt-center max-w-800">
+            <h2 class="white-txt font-size-35 margin-b-40">Craft Beautiful Websites Effortlessly</h2>
+            <div class="display-grid grid-col-4 gap-20">
+                <div class="black-gray-bg border-rad-12 border-1 dark-grey-border">
+                    <h3 class="font-size-14 margin-b-10 azure-txt pad-t-20">NO INSTALLATION REQUIRED</h3>
+                    <p class="pad-l-15 pad-r-15 pad-b-20">Simply add the CDN link to your project and start building.</p>
+                </div>
+                <div class="black-gray-bg pad-2 border-rad-12 border-1 dark-grey-border">
+                    <h3 class="font-size-14 margin-b-10 azure-txt pad-t-20">USER-FRIENDLY DESIGN</h3>
+                    <p class="pad-l-15 pad-r-15 pad-b-20">Enjoy intuitive class names inspired by Bootstrap and Tailwind.</p>
+                </div>
+                <div class="black-gray-bg pad-2 border-rad-12 border-1 dark-grey-border">
+                    <h3 class="font-size-14 margin-b-10 azure-txt pad-t-20">OVER 2,600 CSS CLASSES</h3>
+                    <p class="pad-l-15 pad-r-15 pad-b-20">Access a library of pre-made CSS classes to enhance your designs.</p>
+                </div>
+                <div class="black-gray-bg pad-2 border-rad-12 border-1 dark-grey-border">
+                    <h3 class="font-size-14 margin-b-10 azure-txt pad-t-20">IT IS COMPLETELY FREE</h3>
+                    <p class="pad-l-15 pad-r-15 pad-b-20">New colors, fonts, classes and features added every week.</p>
+                </div>
+            </div>
+            <div>
+                <h3 class="pad-tb-75 azure-txt font-size-24">This website is developed entirely using OdinCSS code.</h3>
+            </div>
+            <div class="">
+                <div class="black-gray-bg pad-2 border-rad-12 border-1 dark-grey-border">
+                    <h3 class="font-size-14 margin-b-15 azure-txt pad-t-20">Copy and paste the following link into the &lt;head&gt; section of your HTML file:</h3>
+                    <p><pre class="pad-l-15 pad-r-15 pad-b-20"><code>&lt;link href="https://odin.fr.to/odinstyle1.css" rel="stylesheet"&gt;</code></pre></p>
+                </div>  
+            </div>
+        </div>
+    </section>
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <!-- Classes Section -->
+    <section class="pad-t-30 pad-b-40 pad-l-20 pad-r-20 dark-gray-bg" id="classes">
+        <div class="max-w-1200 margin-lr-auto">
+            <h2 class="azure-txt">How to write the classes?</h2>
+            <p>Follow us on X.com to get the latest updates and to see how easy it is to use the classes.</p>
+            <div class="display-grid grid-col-3 gap-20 margin-t-20">
+                <div class="black-gray-bg trans-80 pad-20 border-rad-12 txt-center">
+                    <div class="font-size-20 azure-txt margin-b-5">Write the color first</div>
+                    <p>#color</p>
+                    <p>#color-bg</p>
+                    <p>#color-bg-hover</p>
+                    <p>#color-border</p>
+                    <p>#color-txt</p>
+                    <p>#color-txt-hover</p>
+                    <p class="bronze-txt pad-t-10 pad-b-10">Replace #color with the actual color name, like red, blue, black, etc..</p>
+                    <div class="font-size-20 azure-txt margin-b-5">Use "-" everywhere</div>
+                    <p>font-size-20</p>
+                    <p>font-space</p>
+                    <p>txt-center</p>
+                    <p>light-blue-bg</p>
+                    <p>display-flex</p>
+                    <p>margin-r-10</p>
+                </div>
+                <div class="black-gray-bg trans-80 pad-20 border-rad-12 txt-center">
+                    <div class="font-size-20 azure-txt margin-b-5">The number is at the end</div>
+                    <p>border-#number</p>
+                    <p>border-dash-#number</p>
+                    <p>border-rad-#number</p>
+                    <p>font-size-#number</p>
+                    <p>gap-#number</p>
+                    <p>grid-col-#number</p>
+                    <p>h-#number</p>
+                    <p>line-h-#number</p>
+                    <p>margin-#number</p>
+                    <p>max-w-#number</p>
+                    <p>pad-#number</p>
+                    <p>pad-r-#number</p>
+                    <p>transition-#number</p>
+                    <p>w-#number</p>
+                    <p class="bronze-txt pad-t-10">Replace #number with a real number, like 1, 5, 10, 25, etc..</p>
+                </div>
+                <div class="black-gray-bg trans-80 pad-20 border-rad-12 txt-center">
+                    <div class="font-size-20 azure-txt margin-b-5"">Shortener</div>
+                    <p>b replace BOTTOM</p>
+                    <p>bg replace BACKGROUND</p>
+                    <p>col replace COLUMN</p>
+                    <p>h replace HEIGHT</p>
+                    <p>l replace LEFT</p>
+                    <p>pad replace PADDING</p>
+                    <p>pc replace percent (%)</p>
+                    <p>r replace RIGHT</p>
+                    <p>rad replace RADIUS</p>
+                    <p>t replace of TOP</p>
+                    <p>txt replace TEXT</p>
+                    <p>w replace WIDTH</p>
+                    <p class="bronze-txt pad-t-10">For some exception like wide #number%, you will use w-100-pc or wide-50-pc, etc..</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Demo Section -->
+    <section class="max-w-1200 margin-lr-auto" id="demo">
+        <h2 class="pad-b-10 azure-txt font-size-24 pad-t-20">Demo example</h2>
+        <div class="demo-container grid grid-col-3 gap-2 dark-grey-bg transparent-9 pad-20">
+            <div class="preview">
+                <h1 class="font-size-16 margin-b-1">The Code</h1>
+            </div>
+            <div class="preview">
+                <h1 style="font-size: 1.6rem; margin-bottom: 1px;">The Code Explaination</h1>
+            </div>
+            <div class="preview">
+                <h1 style="font-size: 1.6rem; margin-bottom: 1px;">The Result</h1>
+            </div>
+        </div>    
+        <div class="font-size-30 txt-center dark-red-txt pad-b-40">In construction until october 28, 2024.</div>
+            <!-- 
+            <div class="code-block">
+                <pre><code>&lt;h1 class="font-size-30 margin-b-10"&gt;
+    Crafting Beautiful Websites
+&lt;/h1&gt;</code></pre>
+            </div>
+            <div class="preview">
+                <h1 style="font-size: 1.6rem; margin-bottom: 10px;">Crafting Beautiful Websites</h1>
+            </div>
+            <div class="code-block">
+                <pre><code>&lt;h1 class="font-size-30 margin-b-10"&gt;
+    Crafting Beautiful Websites
+&lt;/h1&gt;</code></pre>
+            </div>
+            <div class="preview">
+                <h1 style="font-size: 30px; margin-bottom: 10px;">Crafting Beautiful Websites</h1>
+            </div>
+            <div class="code-block">
+                <pre><code>&lt;h1 class="font-size-30 margin-b-10"&gt;
+    Crafting Beautiful Websites
+&lt;/h1&gt;</code></pre>
+            </div>
+            <div class="preview">
+                <h1 style="font-size: 30px; margin-bottom: 10px;">Crafting Beautiful Websites</h1>
+            </div>
+            <div class="code-block">
+                <pre><code>&lt;h1 class="font-size-30 margin-b-10"&gt;
+    Crafting Beautiful Websites
+&lt;/h1&gt;</code></pre>
+            </div>
+            <div class="preview">
+                <h1 style="font-size: 30px; margin-bottom: 10px;">Crafting Beautiful Websites</h1>
+            </div> -->
+        </div>
+    </section>
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+    <!-- About Section -->
+    <section class="pad-t-30 pad-b-40 pad-l-20 pad-r-20 dark-gray-bg" id="about">
+        <div class="max-w-1200 margin-lr-auto">
+            <h2>What Makes OdinCSS Special?</h2>
+            <div class="display-grid grid-col-3 gap-20 margin-t-20">
+                <div class="black-gray-bg trans-80 pad-20 border-rad-12 txt-center">
+                    <div class="font-size-25 azure-txt margin-b-5">User-Friendly<br>Beginners and Up</div>
+                    <p>OdinCSS makes CSS styling accessible for everyone.</p>
+                    <p>The idea is to make CSS easier for you!</p>
+                </div>
+                <div class="black-gray-bg trans-80 pad-20 border-rad-12 txt-center">
+                    <div class="font-size-25 azure-txt margin-b-5"">Easy to Use<br>Completely Free</div>
+                    <p>No installation required - just start using it!</p>
+                    <p>Stay focused on your HTML without distractions.</p>
+                </div>
+                <div class="black-gray-bg trans-80 pad-20 border-rad-12 txt-center">
+                    <div class="font-size-25 azure-txt margin-b-5"">Design by a Solo Programmer with CSS</div>
+                    <p>Copy and paste the CSS link to get started.</p>
+                    <p>Add keywords to your HTML classes, and you're all set!</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!-- Resources Section -->
+    <section class="pad-t-40 pad-b-40 pad-l-20 pad-r-20 max-w-1200 margin-lr-auto" id="resources">
+        <h2>Available Resources</h2><br>
+        <h3 class="azure-txt">Fonts</h3>
+        <p>It is really easy to change the fonts to your website.</p>
+        <p class="margin-t-30 pad-b-20"><b class="crimson-txt">Example</b> : If you write &lt;p class="font-lobster"&gtMy text&lt;p&gt you will get this result ... <a class="font-lobster">My text</a></p>
+        <div class="display-grid grid-col-auto gap-10 margin-t-20">
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center font-anton">Anton</div>
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center font-cantarell">Cantarell</div>
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center font-danfo">Danfo</div>
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center font-inter">Inter</div>
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center font-lato">Lato</div>
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center font-lobster">Lobster</div>
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center font-montserrat">Montserrat</div>
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center font-newsreader">Newsreader</div>
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center font-noto">Noto</div>
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center font-open">Open</div>
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center font-oswald">Oswald</div>
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center font-oxanium">Oxanium</div>
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center font-oxygen">Oxygen</div>
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center font-playfair">Playfair</div>
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center font-playwrite">Playwrite</div>
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center font-poppins">Poppins</div>
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center font-quicksand">Quicksand</div>
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center font-raleway">Raleway</div>
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center font-space">Space</div>
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center font-roboto">Roboto</div>
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center font-tangerine">Tangerine</div>
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center font-ubuntu">Ubuntu</div>
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center font-updock">Updock</div>
+            <!-- Add more fonts -->
+        </div>
+        <h3 class="azure-txt pad-t-40">Colors</h3>
+        <p>Here are some of the most popular website colors and example on how you can apply them:</p>
+        <p class="margin-t-30">For border color (blue-border or red-border or anyOdinCSScolor-border), background (green-bg or azure-bg and so on), for hover effect for background color (yellow-bg-hover, charcoal-bg-hover or any of the other colors), for hover effect for text color (white-txt-hover, black-txt-hover, etc...), and for text (lime-txt, navy-txt).</p>
+        <p class="margin-t-30 pad-b-20"><b class="crimson-txt">Example</b> : If you write &lt;p class="green-txt blue-txt-hover"&gtMy text&lt;p&gt you will get this result ... <a class="green-txt blue-txt-hover">My text</a></p>
+        <div class="display-grid grid-col-auto gap-10 margin-t-20">
+            <!-- Azure -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 azure-bg"></div>
+                <p>Azure</p>
+            </div>
+            <!-- Beige -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 beige-bg"></div>
+                <p>Beige</p>
+            </div>
+            <!-- Black -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 black-bg"></div>
+                <p>Black</p>
+            </div>
+            <!-- Black gray -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 black-gray-bg square dark-gray"></div>
+                <p class="font-size-14 pad-t-2">Black Gray</p>
+            </div>
+            <!-- Blue -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 blue-bg"></div>
+                <p>Blue</p>
+            </div>
+            <!-- Bronze -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 bronze-bg"></div>
+                <p>Bronze</p>
+            </div>
+            <!-- Brown -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 brown-bg"></div>
+                <p>Brown</p>
+            </div>
+            <!-- Brass -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 brass-bg"></div>
+                <p>Brass</p>
+            </div>
+            <!-- Burgundy -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 burgundy-bg"></div>
+                <p>Burgundy</p>
+            </div>
+            <!-- Champagne -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 champagne-bg"></div>
+                <p class="font-size-12 pad-t-3">Champagne</p>
+            </div>
+            <!-- Charcoal -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 charcoal-bg"></div>
+                <p>Charcoal</p>
+            </div>
+            <!-- Chrome -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 chrome-bg"></div>
+                <p>Chrome</p>
+            </div>
+            <!-- Coral -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 coral-bg"></div>
+                <p>Coral</p>
+            </div>
+            <!-- Copper -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 copper-bg"></div>
+                <p>Copper</p>
+            </div>
+            <!-- Crimson -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 crimson-bg"></div>
+                <p>Crimson</p>
+            </div>
+            <!-- Cyan -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 cyan-bg"></div>
+                <p>Cyan</p>
+            </div>
+            <!-- Dark Blue -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 dark-blue-bg"></div>
+                <p class="font-size-14 pad-t-2">Dark Blue</p>
+            </div>
+            <!-- Dark Gray -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 dark-gray-bg"></div>
+                <p class="font-size-14 pad-t-2">Dark Gray</p>
+            </div>
+            <!-- Dark Green -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 dark-green-bg"></div>
+                <p class="font-size-14 pad-t-2">Dark Green</p>
+            </div>
+            <!-- Dark Red -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 dark-red-bg"></div>
+                <p>Dark Red</p>
+            </div>
+            <!-- Forest -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 forest-bg"></div>
+                <p>Forest</p>
+            </div>
+            <!-- Gold -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 gold-bg"></div>
+                <p>Gold</p>
+            </div>
+            <!-- Gray -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 gray-bg"></div>
+                <p>Gray</p>
+            </div>
+            <!-- Green -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 green-bg"></div>
+                <p>Green</p>
+            </div>
+            <!-- Indigo -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 indigo-bg"></div>
+                <p>Indigo</p>
+            </div>
+            <!-- Ivory -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 ivory-bg"></div>
+                <p>Ivory</p>
+            </div>
+            <!-- Khaki -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 khaki-bg"></div>
+                <p>Khaki</p>
+            </div>
+            <!-- Lavender -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 lavender-bg"></div>
+                <p>Lavender</p>
+            </div>
+            <!-- Light Blue -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 light-blue-bg"></div>
+                <p class="font-size-14 pad-t-2">Light Blue</p>
+            </div>
+            <!-- Light Gray -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 light-gray-bg"></div>
+                <p class="font-size-14 pad-t-2">Light Gray</p>
+            </div>
+            <!-- Light Green -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 light-green-bg"></div>
+                <p class="font-size-14 pad-t-2">Light Green</p>
+            </div>
+            <!-- Light Red -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 light-red-bg"></div>
+                <p>Light Red</p>
+            </div>
+            <!-- Lime -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 lime-bg"></div>
+                <p>Lime</p>
+            </div>
+            <!-- Maroon -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 maroon-bg"></div>
+                <p>Maroon</p>
+            </div>
+            <!-- Magenta -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 magenta-bg"></div>
+                <p>Magenta</p>
+            </div>
+            <!-- Mint -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 mint-bg"></div>
+                <p>Mint</p>
+            </div>
+            <!-- Navy -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 navy-bg"></div>
+                <p>Navy</p>
+            </div>
+            <!-- Orange -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 orange-bg"></div>
+                <p>Orange</p>
+            </div>
+            <!-- Orchid -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 orchid-bg"></div>
+                <p>Orchid</p>
+            </div>
+            <!-- Opal -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 opal-bg"></div>
+                <p>Opal</p>
+            </div>
+            <!-- Peach -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 peach-bg"></div>
+                <p>Peach</p>
+            </div>
+            <!-- Pear -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 pear-bg"></div>
+                <p>Pear</p>
+            </div>
+            <!-- Pink -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 pink-bg"></div>
+                <p>Pink</p>
+            </div>
+            <!-- Platinum -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 platinum-bg"></div>
+                <p>Platinum</p>
+            </div>
+            <!-- Purple -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 purple-bg"></div>
+                <p>Purple</p>
+            </div>
+            <!-- Red -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 red-bg"></div>
+                <p>Red</p>
+            </div>
+            <!-- Rust -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 rust-bg"></div>
+                <p>Rust</p>
+            </div>
+            <!-- Salmon -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 salmon-bg"></div>
+                <p>Salmon</p>
+            </div>
+            <!-- Silver -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 silver-bg"></div>
+                <p>Silver</p>
+            </div>
+            <!-- Slate Gray -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 slate-gray-bg"></div>
+                <p class="font-size-14 pad-t-2">Slate Gray</p>
+            </div>
+            <!-- Steel -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 steel-bg"></div>
+                <p>Steel</p>
+            </div>
+            <!-- Teal -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 teal-bg"></div>
+                <p>Teal</p>
+            </div>
+            <!-- Titanium -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 titanium-bg"></div>
+                <p class="font-size-15 pad-t-1">Titanium</p>
+            </div>
+            <!-- White -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 white-bg"></div>
+                <p>White</p>
+            </div>
+            <!-- Yellow -->
+            <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
+                <div class="w-100-pc h-50 border-rad-4 margin-b-5 yellow-bg"></div>
+                <p>Yellow</p>
+            </div>
+  
+            <!-- Add more colors -->
+        </div>
+    
+    </section>
+    <!-- Footer -->
+    <footer class="black-bg pad-20 border-t charcoal-border">
+        <div class="max-w-1200 margin-lr-auto display-flex justify-content-between items-center">
+            <p class="azure-txt">© 2024 OdinCSS. All rights reserved.</p>
+            <div class="txt-center"><h5 class="crimson-txt">This project is still in its early phase.</h5>
+                <h5>More CSS code, additional colors, and fonts will be incorporated.</h5></div>
+    
+            <div class="display-flex gap-15">
+                <a href="https://github.com/Dubestephane1" title="GitHub" class="white-txt font-size-17 transition-3 azure-txt-hover"><i class="bi bi-github"></i></a>
+                <a href="https://x.com/LearnAIwithOdin" title="OdinCSS" class="white-txt font-size-17 transition-3 azure-txt-hover"><i class="bi bi-twitter-x"></i></a>
+                <a href="https://paypal.me/dubestephane?country.x=CA&locale.x=en_US" title="Paypal" class="white-txt font-size-17 transition-3 azure-txt-hover"><i class="bi bi-paypal"></i></a>
+                <a href="mailto:odincss@proton.me" title="Email" class="white-txt font-size-20 transition-3 azure-txt-hover pad-b-1"><i class="bi bi-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
     <script>
-        $(function() {
-            $("#TopBarHtml").load("TopBar.html");
-            $("#MenuHtml").load("Menu.html");
-            $("#HeroHtml").load("Hero.html");
-            $("#AboutIndexHtml").load("AboutIndex.html");
-            $("#ServiceHtml").load("Service.html");
-            $("#ClientsHtml").load("Clients.html");
-            $("#NewsHtml").load("News.html");
-            $("#FooterHtml").load("Footer.html");
+        // Mobile Menu Toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.querySelector('.nav-links').classList.remove('active');
+            });
         });
     </script>
-
-</head>
-
-<body class="index-page">
-  <header id="header" class="header sticky-top">
-
-    <div id="TopBarHtml"></div>
-
-    <div class="branding">
-      <div class="container position-relative d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo d-flex align-items-center">
-          <!-- Uncomment the line below if you also wish to use an image logo -->
-          <img src="assets/img/secondlogo.jpg" alt="Odin logo">
-          <h1 class="sitename">Odin<br></h1>
-        </a>
-        <nav id="navmenu" class="navmenu">
-          
-          <div id="MenuHtml"></div>
-          <!-- Ensure the mobile-nav-toggle button is outside the <ul> but still within a container that can control both elements -->
-          <i class="mobile-nav-toggle d-xl-none bi bi-list" onclick="toggleMenu()"></i>
-
-          </script>
-        </nav>
-      </div>
-    </div>
-
-  </header>
-
-  <main class="main">
-
-    <div id="HeroHtml"></div>
-
-    <div id="AboutIndexHtml"></div>
-
-    <div id="ServiceHtml"></div>
-
-    <!--<div id="ClientsHtml"></div>-->
-
-  </main>
-
-  <footer id="footer" class="footer position-relative dark-background"> 
-    
-    <div id="NewsHtml"></div>
-
-  <div id="FooterHtml"></div>
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" title="Scroll to top"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
- <!-- <div id="FooterHtml"></div> -->
 </body>
-
 </html>
