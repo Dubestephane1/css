@@ -2,14 +2,14 @@
 
 A lightweight, dependency-free CSS utility framework with **2,700+ classes** to build modern, responsive websites faster — no installation, no build step, no JavaScript.
 
-Live demo: <https://odin.fr.to>
+Live demo: <https://css.stephanedube.dev>
 
 ## Quick Start
 
 Add one line to the `<head>` of your HTML file:
 
 ```html
-<link rel="stylesheet" href="https://odin.fr.to/odin.min.css">
+<link rel="stylesheet" href="https://css.stephanedube.dev/odin.min.css">
 ```
 
 That's it. Start using the classes right away.
@@ -50,7 +50,7 @@ The naming convention is simple and predictable:
 
 ## Resources
 
-- **Site & live demo:** <https://odin.fr.to>
+- **Site & live demo:** <https://css.stephanedube.dev>
 - **Shades, fonts & gradients gallery:** included on the site's *Resources* section
 - **Fonts:** 25+ Google Fonts available as `font-*` classes (e.g. `font-lobster`, `font-oxanium`, `font-poppins`)
 - **Email:** <contact@stephanedube.dev>
