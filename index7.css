@@ -115,3 +115,15 @@
 .black-gray-bg .bronze {
     color: #e0a060;
 }
+
+/* Same treatment for the demo preview (azure on dark-gray #343A40 is 3.0:1)
+   and crimson text on black (4.21:1 — fails AA). */
+.dark-gray-bg .azure-txt,
+.dark-gray-bg .azure {
+    color: #66b3ff;
+}
+
+.black-bg .crimson-txt,
+.black-bg .crimson {
+    color: #f2545b;
+}
