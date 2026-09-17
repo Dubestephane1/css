@@ -1,0 +1,46 @@
+/* OdinCSS landing page — locally subsetted font faces.
+   Loaded AFTER odinstyle.min.css so these @font-face declarations win over
+   the framework's Google Fonts @imports (same family names, local src).
+   Subsets contain exactly the glyphs rendered on this page. */
+
+/* Display fonts — each only renders its showcase word (1-2 KB) */
+@font-face { font-family: 'Anton'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/font-anton.woff2') format('woff2'); }
+@font-face { font-family: 'Anton Static'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/font-anton.woff2') format('woff2'); }
+@font-face { font-family: 'Cantarell'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/font-cantarell.woff2') format('woff2'); }
+@font-face { font-family: 'Danfo'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/font-danfo.woff2') format('woff2'); }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/font-inter.woff2') format('woff2'); }
+@font-face { font-family: 'Lato'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/font-lato.woff2') format('woff2'); }
+@font-face { font-family: 'Lobster'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/font-lobster.woff2') format('woff2'); }
+@font-face { font-family: 'Montserrat'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/font-montserrat.woff2') format('woff2'); }
+@font-face { font-family: 'Newsreader'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/font-newsreader.woff2') format('woff2'); }
+@font-face { font-family: 'Noto Serif'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/font-notoserif.woff2') format('woff2'); }
+@font-face { font-family: 'Open Sans'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/font-opensans.woff2') format('woff2'); }
+@font-face { font-family: 'Oswald'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/font-oswald.woff2') format('woff2'); }
+@font-face { font-family: 'Oxygen'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/font-oxygen.woff2') format('woff2'); }
+@font-face { font-family: 'Playfair Display'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/font-playfairdisplay.woff2') format('woff2'); }
+@font-face { font-family: 'Playwrite'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/font-playwritegbs.woff2') format('woff2'); }
+@font-face { font-family: 'Playwrite GB S'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/font-playwritegbs.woff2') format('woff2'); }
+@font-face { font-family: 'Quicksand'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/font-quicksand.woff2') format('woff2'); }
+@font-face { font-family: 'Raleway'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/font-raleway.woff2') format('woff2'); }
+@font-face { font-family: 'Roboto'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/font-roboto.woff2') format('woff2'); }
+@font-face { font-family: 'Space Grotesk'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/font-spacegrotesk.woff2') format('woff2'); }
+@font-face { font-family: 'Tangerine'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/font-tangerine.woff2') format('woff2'); }
+@font-face { font-family: 'Ubuntu'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/font-ubuntu.woff2') format('woff2'); }
+@font-face { font-family: 'Updock'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/font-updock.woff2') format('woff2'); }
+
+/* Oxanium — nav logo (bold 700) + showcase tile (400) */
+@font-face { font-family: 'Oxanium'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/font-oxanium.woff2') format('woff2'); }
+@font-face { font-family: 'Oxanium'; font-style: normal; font-weight: 700; font-display: swap; src: url('fonts/font-oxanium-700.woff2') format('woff2'); }
+
+/* Poppins — body font, 400/500/700 with full Latin coverage */
+@font-face { font-family: 'Poppins'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/font-poppins-400.woff2') format('woff2'); }
+@font-face { font-family: 'Poppins'; font-style: normal; font-weight: 500; font-display: swap; src: url('fonts/font-poppins-500.woff2') format('woff2'); }
+@font-face { font-family: 'Poppins'; font-style: normal; font-weight: 700; font-display: swap; src: url('fonts/font-poppins-700.woff2') format('woff2'); }
+
+/* Bootstrap Icons — 4 glyphs used on this page (bi-list, bi-github, bi-paypal, bi-envelope) */
+@font-face { font-family: 'bootstrap-icons'; font-display: swap; src: url('fonts/bootstrap-icons.woff2') format('woff2'); }
+.bi{display:inline-block;font-family:"bootstrap-icons"!important;font-weight:normal!important;font-style:normal!important;line-height:1!important;vertical-align:-0.125em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.bi-list::before{content:"\f479"}
+.bi-github::before{content:"\f3ed"}
+.bi-paypal::before{content:"\f662"}
+.bi-envelope::before{content:"\f32f"}

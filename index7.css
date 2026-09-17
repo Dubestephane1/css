@@ -101,3 +101,17 @@
         transition: none !important;
     }
 }
+
+/* Color-contrast fixes (page-level only — framework color values are unchanged):
+   azure #007FFF on black-gray #1C1F22 is 4.4:1 (fails WCAG AA for small text),
+   bronze #CD7F32 on the same background is borderline. These overrides apply a
+   lighter shade ONLY on dark cards so headings and labels pass 4.5:1. */
+.black-gray-bg .azure-txt,
+.black-gray-bg .azure {
+    color: #66b3ff;
+}
+
+.black-gray-bg .bronze-txt,
+.black-gray-bg .bronze {
+    color: #e0a060;
+}

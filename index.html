@@ -17,10 +17,11 @@
     <meta name="twitter:title" content="OdinCSS - Modern CSS Framework">
     <meta name="twitter:description" content="Over 2,625 utility classes to write CSS faster.">
     <meta name="twitter:image" content="https://css.stephanedube.dev/odinicon.png">
+    <link rel="canonical" href="https://css.stephanedube.dev/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="odinstyle.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css">
+    <link href="fonts-local.css" rel="stylesheet">
     <link rel="icon" type="image/ico" sizes="16x16" href="odinicon.ico">
     <link rel="icon" type="image/png" sizes="512x512" href="odinicon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="odinicon.png">
@@ -33,7 +34,7 @@
         <div class="max-w-1200 margin-lr-auto display-flex justify-content-between items-center">
             <div class="display-flex items-center gap-1">
                 <div class="w-40 h-40 display-flex items-center justify-content-center pad-t-5">
-                    <a href="#"><img src="odinicon.ico" class="h-45" alt="OdinCSS Logo"></a>
+                    <a href="#"><img src="odinicon.ico" class="h-45" width="45" height="45" alt="OdinCSS Logo"></a>
                 </div>
                 <h1><a href="#" class="font-oxanium font-size-20 azure-txt pad-l-5 pad-t-4 txt-deco-none">OdinCSS</a></h1>
             </div>
@@ -51,6 +52,7 @@
     </nav>
 
     <!-- Hero Section -->
+    <main>
     <section class="pad-t-30 pad-b-40 pad-l-20 pad-r-20 dark-gray-bg txt-center grad-dark" id="home">
         <div class="max-w-1200 margin-lr-auto">
             <h2 class="white-txt font-size-35 margin-b-40 txt-center">Craft Beautiful Websites Effortlessly</h2>
@@ -251,7 +253,7 @@
         <h2>Available Resources</h2><br>
         <h3 class="azure-txt">Fonts</h3>
         <p>It is really easy to change the fonts to your website.</p>
-        <p class="margin-t-30 pad-b-20"><b class="crimson-txt">Example</b> : If you write &lt;p class="font-lobster"&gtMy text&lt;p&gt you will get this result ... <a class="font-lobster">My text</a></p>
+        <p class="margin-t-30 pad-b-20"><b class="crimson-txt">Example</b> : If you write &lt;p class="font-lobster"&gt;My text&lt;/p&gt; you will get this result ... <a class="font-lobster">My text</a></p>
         <div class="display-grid grid-col-auto gap-10 margin-t-20">
             <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center font-anton">Anton</div>
             <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center font-cantarell">Cantarell</div>
@@ -281,7 +283,7 @@
         <h3 class="azure-txt pad-t-40">Colors</h3>
         <p>Here are some of the most popular website colors and example on how you can apply them:</p>
         <p class="margin-t-30">For border color (blue-border or red-border or anyOdinCSScolor-border), background (green-bg or azure-bg and so on), for hover effect for background color (yellow-bg-hover, charcoal-bg-hover or any of the other colors), for hover effect for text color (white-txt-hover, black-txt-hover, etc...), and for text (green-txt, navy-txt).</p>
-        <p class="margin-t-30 pad-b-20"><b class="crimson-txt">Example</b> : If you write &lt;p class="green-txt blue-txt-hover"&gtMy text&lt;p&gt you will get this result ... <a class="green-txt blue-txt-hover">My text</a></p>
+        <p class="margin-t-30 pad-b-20"><b class="crimson-txt">Example</b> : If you write &lt;p class="green-txt blue-txt-hover"&gt;My text&lt;/p&gt; you will get this result ... <a class="green-txt blue-txt-hover">My text</a></p>
         <div class="display-grid grid-col-auto gap-10 margin-t-20">
             <!-- Azure -->
             <div class="black-gray-bg trans-90 pad-10 border-rad-8 txt-center">
@@ -557,7 +559,7 @@
         </div>
         <h3 class="azure-txt pad-t-40">Gradient</h3>
         <p>It is really easy to add gradient to a DIV or to a P.</p>
-        <p class="margin-t-30 pad-b-20"><b class="crimson-txt">Example</b> : Add a class with the gradient name &lt;div class="grad-peachy"&gtMy text&lt;/div&gt</p>
+        <p class="margin-t-30 pad-b-20"><b class="crimson-txt">Example</b> : Add a class with the gradient name &lt;div class="grad-peachy"&gt;My text&lt;/div&gt;</p>
         <div class="display-grid grid-col-ch-30 gap-10 margin-t-20">
             <div class="black-gray-bg pad-10 border-rad-8 txt-center grad-blue-sky">Blue Sky</div>
             <div class="black-gray-bg pad-10 border-rad-8 txt-center grad-burgundy">Burgundy</div>
@@ -574,16 +576,17 @@
             <!-- Add more fonts -->
         </div>
     </section>
+    </main>
     <!-- Footer -->
     <footer class="black-bg pad-20 border-t charcoal-border">
         <div class="max-w-1200 margin-lr-auto display-flex justify-content-between items-center">
             <p class="azure-txt font-size-16">© 2026 OdinCSS. All rights reserved.</p>
-            <div class="txt-center"><h5 class="crimson-txt margin-r-20">This project is still in its early phase.</h5>
-                <h5 class="margin-r-20">More code, colors, and fonts will be added regularly.</h5></div>
+            <div class="txt-center"><h4 class="crimson-txt margin-r-20">This project is still in its early phase.</h4>
+                <h4 class="margin-r-20">More code, colors, and fonts will be added regularly.</h4></div>
     
             <div class="display-flex gap-15">
                 <a href="https://github.com/Dubestephane1" title="GitHub" class="white-txt font-size-17 transition-3 azure-txt-hover"><i class="bi bi-github"></i></a>
-                <a href="https://paypal.me/dubestephane?country.x=CA&locale.x=en_US" title="Paypal" class="white-txt font-size-17 transition-3 azure-txt-hover"><i class="bi bi-paypal"></i></a>
+                <a href="https://paypal.me/dubestephane?country.x=CA&amp;locale.x=en_US" title="Paypal" class="white-txt font-size-17 transition-3 azure-txt-hover"><i class="bi bi-paypal"></i></a>
                 <a href="mailto:contact@stephanedube.dev" title="Email" class="white-txt font-size-20 transition-3 azure-txt-hover pad-b-1"><i class="bi bi-envelope"></i></a>
             </div>
         </div>
